@@ -1,0 +1,21 @@
+@page "/employeecard"
+
+@if(Employees == null){
+    <div class="spinner"></div>
+}
+
+<div class="card-deck">
+     @foreach(var empl in Employees){
+        <div class="card m-3" style="min-width: 18rem; max-width:30%;">
+            <div class="card-header">
+                <h3>@empl.FirstName @empl.LastName</h3>
+            </div>
+            <img class="card-img-top img-thumbnail" src="@empl.PhotoPath"/>
+            <div class="card-footer text-center">
+                <a href="@($"employeedetailcard/{empl.EmployeeId}")" class="btn btn-primary m-1">view</a>
+                <a href="@($"editemployee/{empl.EmployeeId}")" class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-danger m-1">Delete</a>
+            </div>
+        </div>
+    }
+</div>

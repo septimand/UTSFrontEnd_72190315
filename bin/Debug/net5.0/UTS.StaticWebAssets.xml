@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="D:\Kuliah\Semester\Semester 5\Visual Studio Code\Pemrogramman Frontend\UTS\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Kuliah\Semester\Semester 5\Visual Studio Code\Pemrogramman Frontend\UTS\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>
